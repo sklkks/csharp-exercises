@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/솔루션 항목/">
+    <File Path="../../source/repos/ConsoleApp1/ConsoleApp1.slnx" />
+  </Folder>
+  <Project Path="CH01Q01/CH01Q01.csproj" />
+  <Project Path="CH01Q02/CH01Q02.csproj" Id="af4ee394-2ce8-414d-a492-79ffe14a0efd" />
+</Solution>

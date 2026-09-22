@@ -6,4 +6,7 @@
   <Project Path="CH04Q05/CH04Q05.csproj" />
   <Project Path="CH04Q06/CH04Q06.csproj" />
   <Project Path="CH04Q07/CH04Q07.csproj" />
+  <Project Path="CH04Q08/CH04Q08.csproj" />
+  <Project Path="CH04Q09/CH04Q09.csproj" />
+  <Project Path="CH04Q10/CH04Q10.csproj" />
 </Solution>

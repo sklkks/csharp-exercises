@@ -8,5 +8,6 @@ double move = double.Parse(Console.ReadLine());
 float start = start + 1;
 
 
+
 Console.WriteLine($"float 반영량: {start}");
 

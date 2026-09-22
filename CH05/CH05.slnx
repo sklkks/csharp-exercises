@@ -3,4 +3,7 @@
   <Project Path="CH05Q04/CH05Q04.csproj" Id="4b35ba0d-d811-476b-8d2f-f47613803dfb" />
   <Project Path="CH05Q05/CH05Q05.csproj" Id="1be9a852-fac0-4440-b24f-30a7bb7b53dd" />
   <Project Path="CH05Q06/CH05Q06.csproj" Id="3c6182db-7579-4caf-b2d1-317fe9857c8c" />
+  <Project Path="CH05Q07/CH05Q07.csproj" Id="7d2d47b5-3b8e-43d4-9066-eed2dec189e1" />
+  <Project Path="CH05Q08/CH05Q08.csproj" Id="a6ec0e8a-3058-4fdf-8fc9-8b46ce103b31" />
+  <Project Path="CH05Q09/CH05Q09.csproj" Id="667d6b87-3af5-4268-ac6c-a1a8aac53d29" />
 </Solution>

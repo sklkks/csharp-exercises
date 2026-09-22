@@ -1,15 +1,19 @@
 ﻿using System;
 
 Console.Write("가로 픽셀 수: ");
-int rk = int.Parse(Console.ReadLine());
+int width = int.Parse(Console.ReadLine());
 Console.Write("세로 픽셀 수: ");
-int tp = int.Parse(Console.ReadLine());
+int length = int.Parse(Console.ReadLine());
 Console.Write("길이 확대 비율: ");
-int ghkr = int.Parse(Console.ReadLine());
+int enlargement = int.Parse(Console.ReadLine());
 
 
 
-int pixel = rk * tp * ghkr;
+int memory = width * length * 4;
+int scale = (int)Math.Pow(enlargement, 2);
+int enl_pixel = memory * scale;
+int addedMemory = enl_pixel - memory;
+int pixel = width * length * scale;
 
-Console.Write($"확대 후 픽셀 수: {pixel}");
-Console.Write($"추가 메모리: {}바이트");
+Console.WriteLine($"확대 후 픽셀 수: {pixel}");
+Console.WriteLine($"추가 메모리: {addedMemory}바이트");

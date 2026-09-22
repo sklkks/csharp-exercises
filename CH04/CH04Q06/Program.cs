@@ -15,6 +15,6 @@ decimal all_a = Math.Round(all);
 
 decimal def = Math.Abs(total_a - all_a);
 
-Console.WriteLine($"건별 정산 {Math.Round(total_a)}");
-Console.WriteLine($"합산 정산 {Math.Round(all_a)}");
-Console.WriteLine($"차이 {def}");
+Console.WriteLine($"건별 정산: {Math.Round(total_a)}");
+Console.WriteLine($"합산 정산: {Math.Round(all_a)}");
+Console.WriteLine($"차이: {def}");

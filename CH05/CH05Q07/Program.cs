@@ -1,12 +1,14 @@
 ﻿using System;
 
 Console.Write("십의 자리: ");
-char tensChar = Console.ReadLine()[0];
+int ten = int.Parse(Console.ReadLine());
 Console.Write("일의 자리: ");
-char onesChar = Console.ReadLine()[0];
+int one = int.Parse(Console.ReadLine());
 
-string label = $"{tensChar}{onesChar}";
-int int_value = (tensChar - '0') * 10 + (onesChar - '0');
+char num = (char)(ten + '0');
+char num2 = (char)(one + '0');
 
-Console.WriteLine($"번호 표기: {label}");
-Console.WriteLine($"정수 값: {int_value}");
+int num_int = ten * 10 + one;
+
+Console.WriteLine($"번호 표기: {num}{num2}");
+Console.WriteLine($"정수 값: {num_int}");

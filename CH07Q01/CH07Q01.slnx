@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="CH07Q01/CH07Q01.csproj" />
+  <Project Path="CH07Q02/CH07Q02.csproj" />
+  <Project Path="CH07Q03/CH07Q03.csproj" />
+  <Project Path="CH07Q04/CH07Q04.csproj" />
+  <Project Path="CH07Q05/CH07Q05.csproj" />
+  <Project Path="CH07Q06/CH07Q06.csproj" />
+  <Project Path="CH07Q07/CH07Q07.csproj" />
+</Solution>

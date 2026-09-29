@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="CH09Q01/CH09Q01.csproj" />
+  <Project Path="CH09Q02/CH09Q02.csproj" />
+  <Project Path="CH09Q03/CH09Q03.csproj" Id="60268f4a-8ead-43de-95fd-630bf1fb7aa5" />
+  <Project Path="CH09Q05/CH09Q05.csproj" />
+  <Project Path="CH09Q09/CH09Q09.csproj" Id="2fee160e-89f3-4b00-ad88-dcd1a29c2b24" />
+  <Project Path="CH09Q10/CH09Q10.csproj" Id="ded71967-63a0-4de0-9a36-1ab5d35f5aae" />
+  <Project Path="ConsoleApp1/CH09Q04.csproj" Id="4552edc6-d9e0-4807-bc20-8e6bc64ad925" />
+</Solution>

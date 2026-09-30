@@ -1,7 +1,5 @@
 ﻿using System;
-
 string command = Console.ReadLine();
-
 string file = Console.ReadLine();
 
 int ww = int.Parse(file);
@@ -14,6 +12,7 @@ else
 {
     Console.WriteLine($"출처: 파일");
 }
+
 
 if (ww >= 1 && ww <= 100)
 {

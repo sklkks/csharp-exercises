@@ -5,11 +5,24 @@ int[] numbers = new int[length];
 
 for (int i = 0; i < length; i++)
 {
-    int number = int.Parse(Console.ReadLine()); 
-    numbers[i] = number;
+    numbers[i] = int.Parse(Console.ReadLine());
 }
-Array.Reverse(numbers);
-foreach (int number in numbers)
+
+for (int i = 0; i < length / 2; i++)
 {
-    Console.WriteLine($"목록: {number}");
+    int temp = numbers[i];
+    numbers[i] = numbers[length - 1 - i];
+    numbers[length - 1 - i] = temp;
+}
+
+if (length == 0)
+{
+    Console.WriteLine("목록:");
+}
+else
+{
+    foreach (int number in numbers)
+    {
+        Console.WriteLine($"목록: {number}");
+    }
 }

@@ -17,6 +17,7 @@ foreach (int value in numbers)
 {
     sum += value;
 }
+
 for (int i = 0; i < bins; i++)
 {
     Console.WriteLine($"{i + 1}번: {numbers[i]}");

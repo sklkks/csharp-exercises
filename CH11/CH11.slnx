@@ -1,5 +1,7 @@
 <Solution>
-  <Project Path="CH11Q01/CH11Q01.csproj" />
-  <Project Path="CH11Q02/CH11Q02.csproj" Id="e00acba7-af84-4eef-be6e-a7a64c2a1925" />
-  <Project Path="CH11Q03/CH11Q03.csproj" Id="d47ca0e8-e6bd-4323-97df-1d68ec015730" />
+  <Project Path="CH11Q04/CH11Q04.csproj" />
+  <Project Path="CH11Q05/CH11Q05.csproj" Id="e10088ed-19a6-446b-af62-c09f1e7edf2d" />
+  <Project Path="CH11Q06/CH11Q06.csproj" Id="704250b7-58eb-4182-bedc-2c41c1f0dc72" />
+  <Project Path="CH11Q08/CH11Q08.csproj" Id="f53de98d-5ef7-44ce-b115-4808bd6e3b15" />
+  <Project Path="CH11Q09/CH11Q09.csproj" Id="28f96562-200d-4d6d-a937-613f8519afc5" />
 </Solution>

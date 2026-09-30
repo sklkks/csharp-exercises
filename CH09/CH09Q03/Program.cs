@@ -1,13 +1,30 @@
 ﻿using System;
 
-int number = int.Parse(Console.ReadLine());
-int a = 1;
+int count = int.Parse(Console.ReadLine());
 
-for (int i = 0; i < number; i++)
+if (count >= 0 && count <= 8)
 {
-    
-    int input = int.Parse(Console.ReadLine());
-    a *= input;
+    int total = 1;
+    bool valid = true;
+
+    for (int i = 0; i < count; i++)
+    {
+        int scale = int.Parse(Console.ReadLine());
+
+        if (scale >= 1 && scale <= 5)
+        {
+            total = total * scale;
+        }
+        else
+        {
+            valid = false;
+            break;
+        }
+    }
+
+    if (valid)
+    {
+        Console.WriteLine("합성 배율: " + total);
+    }
 }
 
-Console.WriteLine($"합성 배율: {a}");

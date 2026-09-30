@@ -1,23 +1,19 @@
 ﻿using System;
 
-int fir = int.Parse(Console.ReadLine());
+int start = int.Parse(Console.ReadLine());
 int interval = int.Parse(Console.ReadLine());
-int items = int.Parse(Console.ReadLine());
-int sum = 0;
-int i = 0;
+int count = int.Parse(Console.ReadLine());
 
-for (; i < items; i ++)
+if (start >= 1 && start <= 1000 && interval >= 1 && interval <= 10 &&
+    count >= 0 && count <= 10)
 {
-    Console.WriteLine($"발급: {fir + sum}");
-    sum += interval;
+    int current_num = start;
 
+    for (int i = 0; i < count; i++)
+    {
+        Console.WriteLine("발급: " + current_num);
+        current_num = current_num + interval;
+    }
 
-
+    Console.WriteLine("다음 번호: " + current_num);
 }
-if(i == 3)
-{
-    Console.WriteLine($"다음 번호: {fir + sum}");
-}
-
-
-

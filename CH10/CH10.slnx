@@ -5,4 +5,6 @@
   <Project Path="CH10Q04/CH10Q04.csproj" />
   <Project Path="CH10Q05/CH10Q05.csproj" />
   <Project Path="CH10Q06/CH10Q06.csproj" />
+  <Project Path="CH10Q07/CH10Q07.csproj" Id="79ce72e0-8478-458b-92a7-e95a5ca4906a" />
+  <Project Path="CH10Q08/CH10Q08.csproj" Id="3a0c9cfc-77d2-4b75-b5d4-0fe3eb8117c8" />
 </Solution>

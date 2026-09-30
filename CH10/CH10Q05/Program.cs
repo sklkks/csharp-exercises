@@ -4,6 +4,8 @@ string memo = string.Empty;
 
 int line = int.Parse(Console.ReadLine());
 
+int count = 0;
+
 for (int i = 0; i < line; i++)
 {
     string input = Console.ReadLine();
@@ -18,5 +20,7 @@ for (int i = 0; i < line; i++)
     }
 
     memo += input;
+    count++;
 }
 Console.WriteLine($"[{memo}]");
+Console.WriteLine($"남긴 메모: {count}");

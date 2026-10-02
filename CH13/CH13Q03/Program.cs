@@ -1,16 +1,15 @@
 ﻿using System;
 
 Console.Write("원본 문자열: "); //AB12-3456
-string phone = Console.ReadLine();
-char[] notes = phone.ToCharArray();
-
+string str = Console.ReadLine();
+char[] new_str = str.ToCharArray();
 
 int number = 0;
 int count = 0;
 
-foreach (char note in notes)
+foreach (char new_strs in new_str)
 {
-    if (char.IsDigit(note))
+    if (char.IsDigit(new_strs))
     {
         number++;
         if (number <= 2)
@@ -19,14 +18,15 @@ foreach (char note in notes)
         }
         for (int i = 0; count < number - 2; i++)
         {
-            if (char.IsDigit(notes[i]))
+            if (char.IsDigit(new_str[i]))
             {
                 count++;
-                notes[i] = '*';
+                new_str[i] = '*';
             }
         }
     }
+
 }
 
-Console.WriteLine($"원본: [{phone}]");
-Console.WriteLine($"결과: [{new string(notes)}]");
+Console.WriteLine($"원본: [{str}]");
+Console.WriteLine($"결과: [{new string(new_str)}]");

@@ -6,5 +6,6 @@
   <Project Path="CH14Q05/CH14Q05.csproj" Id="1827326f-62ba-4d54-bc35-be33e04bb69d" />
   <Project Path="CH14Q06/CH14Q06.csproj" Id="983943c1-c320-40c9-849b-13a46c635ae2" />
   <Project Path="CH14Q07/CH14Q07.csproj" Id="f37ac20e-d11e-4704-bee8-2d0e65b8678d" />
+  <Project Path="CH14Q08/CH14Q08.csproj" Id="f08b9d46-ac44-4815-ae73-9469ceb83144" />
   <Project Path="CH14Q10/CH14Q10.csproj" />
 </Solution>

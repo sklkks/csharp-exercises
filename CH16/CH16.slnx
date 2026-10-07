@@ -3,5 +3,7 @@
   <Project Path="CH16Q02/CH16Q02.csproj" />
   <Project Path="CH16Q03/CH16Q03.csproj" Id="5b525167-94cb-4bd0-a256-594344d64a22" />
   <Project Path="CH16Q04/CH16Q04.csproj" Id="58b362c5-317d-45d1-8f98-3045dea64717" />
+  <Project Path="CH16Q05/CH16Q05.csproj" Id="e9bcaa7c-abd5-4adf-9938-5243ee8a1735" />
+  <Project Path="CH16Q06/CH16Q06.csproj" Id="596adbcc-d87e-4f4c-8749-bae312b9494b" />
   <Project Path="CH16Q08/CH16Q08.csproj" />
 </Solution>

@@ -48,7 +48,6 @@ namespace CH19Q08
                     }
                 }
 
-                // 아무 항목도 없을 경우 null 또는 빈 문자열 반환
                 return null;
             }
         }

@@ -4,16 +4,16 @@ using CH19Q08;
 WorkItem[] items = new WorkItem[2] {new WorkItem("자료 정리"), new WorkItem("검토")};
 TaskBoard board = new TaskBoard();
 
-Console.WriteLine("요청 수: ");
+Console.Write("요청 수: ");
 int count = int.Parse(Console.ReadLine());
 
 for(int i = 0; i < count; i++)
 {
     Console.WriteLine();
     Console.WriteLine($"[요청 {i + 1}]");
-    Console.WriteLine("동작: ");
+    Console.Write("동작: ");
     string action = Console.ReadLine();
-    Console.WriteLine("대상 인덱스 (완료: 작업, 그 외: 슬롯)");
+    Console.WriteLine("대상 인덱스 (완료: 작업, 그 외: 슬롯): ");
     int index = int.Parse(Console.ReadLine());
     switch (action)
     {
@@ -30,6 +30,8 @@ for(int i = 0; i < count; i++)
             break;
     }
 
+    string nextTitle = board.NextTitle ?? "없음";
+    Console.WriteLine($"남음 {board.PendingCount}, 다음 {nextTitle}");
 }
 
 Console.WriteLine("조회할 슬롯 인덱스: ");

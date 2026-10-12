@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="CH19Q01/CH19Q01.csproj" />
   <Project Path="CH19Q02/CH19Q02.csproj" />
+  <Project Path="CH19Q03/CH19Q03.csproj" Id="13c2f399-ade6-4b09-886d-4db1d4e0f999" />
 </Solution>

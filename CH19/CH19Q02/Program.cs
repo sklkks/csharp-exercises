@@ -1,5 +1,5 @@
 ﻿using System;
-
+using CH19Q02;
 
 Console.Write("기록 수: ");
 int num = int.Parse(Console.ReadLine());
@@ -15,25 +15,3 @@ for (int i = 0; i < num; i++)
 }
 Console.WriteLine($"최종: {log.Count}개, {log.Minimum}~{log.Maximum}, 폭 {log.Spread}");
 
-class RangeLog
-{
-    public int Count { get; private set; }
-    public int Minimum { get; private set; }
-    public int Maximum { get; private set; }
-    public int Spread;
-
-    public RangeLog(int value)
-    {
-        Count = value;
-        Minimum = int.MaxValue;
-        Maximum = int.MinValue;
-        Spread = 0;
-    }
-
-    public void Record(int value)
-    {
-        if (value < Minimum) Minimum = value;
-        if (value > Maximum) Maximum = value;
-        Spread = Maximum - Minimum;
-    }
-}

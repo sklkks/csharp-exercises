@@ -2,5 +2,6 @@
   <Project Path="CH20Q01/CH20Q01.csproj" />
   <Project Path="CH20Q02/CH20Q02.csproj" />
   <Project Path="CH20Q03/CH20Q03.csproj" />
+  <Project Path="CH20Q04/CH20Q04.csproj" Id="e848f09d-ea65-4597-a03c-7b4332dfab8e" />
   <Project Path="CH20Q08/CH20Q06.csproj" />
 </Solution>

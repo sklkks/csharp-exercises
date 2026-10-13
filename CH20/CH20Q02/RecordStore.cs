@@ -27,7 +27,7 @@ namespace CH20Q02
                     sb.Append(values[i]);
                 }
                 
-                if(i < values.Length)
+                if(i < values.Length - 1)
                 {                    
                     sb.Append(',');   
                    

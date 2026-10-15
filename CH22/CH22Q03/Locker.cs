@@ -6,12 +6,12 @@ namespace CH22Q03
 {
     internal class Locker : ILockable
     {
+        private string _name;
+        private bool isLocked = false;
         public Locker(string name)
         {
-            
+            _name = name;
         }
-
-        private bool isLocked = false;
 
         // ILockable 인터페이스 구현
         public bool Lock()
@@ -24,6 +24,9 @@ namespace CH22Q03
             return true;
         }
 
-                
+        public override string ToString()
+        {
+            return isLocked.ToString();
+        }
     }
 }

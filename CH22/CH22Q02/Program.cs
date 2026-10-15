@@ -20,18 +20,18 @@ for (int i = 0; i < count; i++)
         Console.Write("추가할 값: ");
         int ad = int.Parse(Console.ReadLine());
         bool isSuccess = counter.Add(ad);
-        Console.WriteLine($"추가 {isSuccess}: {counter.sum}/{counter.totalSum}");
+        Console.WriteLine($"{st} {isSuccess}: {counter.sum}/{counter.totalSum}");
     }
     if(st == "회차초기화")
     {
         session.Reset();
-        Console.WriteLine($"회차초기화: {counter.sum}/{counter.totalSum}");
+        Console.WriteLine($"{st}: {counter.sum}/{counter.totalSum}");
     }
     
     if(st == "누적초기화")
     {
         lifetime.Reset();
-        Console.WriteLine($"누적초기화: {counter.sum}/{counter.totalSum}");
+        Console.WriteLine($"{st}: {counter.sum}/{counter.totalSum}");
     }
 }
 Console.WriteLine();

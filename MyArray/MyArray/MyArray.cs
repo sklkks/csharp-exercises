@@ -1,19 +1,24 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 class MyArray
 {
-    public static void ForEach(int[] array, Action<int> action)
+    public static void ForEach<T>(T[] array, Action<T> action)
     {
-        foreach (int number in array)
+        Queue<T> a = new Queue<T>();
+
+        while (a.Count > 0)
         {
-            action(number);
+            action(a.Dequeue());
         }
     }
 
-    public static int Count(int[] array, Predicate<int> match)
+    public static int Count<T>(T[] array, Predicate<T> match)
     {
         int count = 0;
-        foreach (int number in array)
+        foreach (T number in array)
         {
             if (match(number))
             {
@@ -23,9 +28,9 @@ class MyArray
         return count;
     }
 
-    public static bool Exists(int[] array, Predicate<int> match)
+    public static bool Exists<T>(T[] array, Predicate<T> match)
     {
-        foreach (int number in array)
+        foreach (T number in array)
         {
             if (match(number))
             {
@@ -35,7 +40,7 @@ class MyArray
         return false;
     }
 
-    public static int FindIndex(int[] array, Predicate<int> match)
+    public static int FindIndex<T>(T[] array, Predicate<T> match)
     {
         for (int i = 0; i < array.Length; i++)
         {
@@ -48,9 +53,9 @@ class MyArray
     }
 
 
-    public static int[] Filter(int[] array, Predicate<int> match)
+    public static T[] Filter<T>(T[] array, Predicate<T> match)
     {
-        int[] result = new int[Count(array, match)];
+        T[] result = new T[Count(array, match)];
         int index = 0;
         for (int i = 0; i < array.Length; i++)
         {
@@ -63,7 +68,7 @@ class MyArray
     }
 
 
-    public static void Transform(int[] array, Func<int, int> transformer)
+    public static void Transform<T>(T[] array, Func<T, T> transformer)
     {
         for (int i = 0; i < array.Length; ++i)
         {
@@ -71,7 +76,18 @@ class MyArray
         }
     }
 
-    public static void Sort(int[] array, Func<int, int, int> comparison)
+    public static TOutput[] ConvertAll<TInput, TOutput>(TInput[] array, Func<TInput, TOutput> converter)
+    {
+        TOutput[] result = new TOutput[array.Length];
+        int index = 0;
+        for(int i = 0;i < array.Length - 1; ++i)
+        {
+            result[index++] = converter(array[i]);
+        }
+        return result;
+    }
+
+    public static void Sort<T>(T[] array, Func<T, T, int> comparison)
     {
         for (int i = 0; i < array.Length - 1; i++)
         {
@@ -79,12 +95,17 @@ class MyArray
             {
                 if (comparison(array[j], array[j + 1]) > 0)
                 {
-                    int temp = array[j];
+                    T temp = array[j];
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
                 }
             }
         }
     }
+    public static void Sort<T>(T[] array) where T : IComparable<T>
+    {
+        Sort(array, (x, y) => x.CompareTo(y));
+    }
+         
 }
 

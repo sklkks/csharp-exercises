@@ -10,8 +10,8 @@ for (int i = 0; i < count; i++)
     numbers[i] = int.Parse(Console.ReadLine());
 }
 
-Console.WriteLine("폭: " + MeaSure(numbers, GetRange));
-Console.WriteLine("변화: " + MeaSure(numbers, CountDifferentAdjacentPairs));
+Console.WriteLine($"폭: {MeaSure(numbers, GetRange)}");
+Console.WriteLine($"변화: {MeaSure(numbers, CountDifferentAdjacentPairs)}");
 
 
 static int GetRange(int[] arr) 
